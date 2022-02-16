@@ -1,0 +1,151 @@
+/* screen size 1270px */
+/* screen size 1270px */
+
+@media all and (max-width: 1270px) {
+  /*excepect area*/
+  .container {
+    max-width: 1000px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .payment_featuere_three_img img {
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* screen size 1060px */
+/* screen size 1060px */
+@media all and (max-width: 1080px) {
+  .single_footer_area {
+    flex: 0 0 50%;
+  }
+}
+
+/* screen size 1056px */
+/* screen size 1056px */
+@media all and (max-width: 1056px) {
+  .payment_subscribe_info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .payment_subscribe_info .payment_subscribe_content {
+    margin-bottom: 16px;
+  }
+}
+
+/* screen size 1060px */
+/* screen size 1060px */
+@media all and (max-width: 786px) {
+  .payment_subscribe_info .subscribe-form {
+    display: block;
+  }
+  .payment_subscribe_info .subscribe-form .btn_four {
+    margin-top: 4%;
+  }
+}
+
+/* screen size 618px */
+/* screen size 618px */
+@media all and (max-width: 618px) {
+  .payment_subscribe_info .subscribe-form .form-control {
+    width: 200px;
+  }
+}
+
+/* screen size 1060px */
+/* screen size 1060px */
+@media all and (max-width: 736px) {
+  .single_footer_area {
+    flex: 0 0 90%;
+  }
+}
+
+/* screen size 1060px */
+/* screen size 1060px */
+@media all and (max-width: 1060px) {
+  /*excepect area*/
+  .another_payment_feature {
+    flex: 0 0 90% !important;
+  }
+
+  .payment_feature_area_img img {
+    max-width: 100%;
+  }
+
+  .single_payment_two_area {
+    flex: 0 0 71%;
+  }
+  .payment_feature_area_img {
+    margin-top: 11%;
+  }
+
+  .single_payment_three_section {
+    flex: 0 0 80%;
+    align-items: center;
+  }
+}
+
+/* screen size 966px */
+/* screen size 966px */
+
+@media all and (max-width: 966px) {
+  /*excepect area*/
+  .single_feature {
+    flex: 0 0 75%;
+    margin-bottom: 21px;
+  }
+}
+
+/* screen size 800px */
+/* screen size 800px */
+
+@media all and (max-width: 800px) {
+  /*excepect area*/
+  .all_independent_img {
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width: 646px) {
+  /*excepect area*/
+  .sinlge_item_section_payment_feature {
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width: 558px) {
+  /*excepect area*/
+  .container {
+    width: 85%;
+  }
+  .payment_featuere_three_img img {
+    max-width: 100%;
+  }
+}
+
+/* screen size 480px */
+/* screen size 480px */
+@media all and (max-width: 480px) {
+  .payment_subscribe_info .subscribe-form .form-control {
+    width: 147px;
+  }
+}
+
+/* screen size 320px */
+/* screen size 320px */
+@media all and (max-width: 320px) {
+  /*excepect area*/
+  .sec_title .sect_h2_title {
+    font-size: 32px;
+  }
+  .sec_title .section_subtitle {
+    width: 92%;
+    text-align: center;
+  }
+  .container {
+    width: 80%;
+  }
+}
