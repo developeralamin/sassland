@@ -84,11 +84,306 @@ ul {
 }
 
 /*********************************/
+/******* 1.Start Navbar CSS area *****/
+/*********************************/
+
+#header_section {
+  position: relative;
+  z-index: 9;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header_top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  /* border-bottom: 1px solid #515369; */
+}
+nav ul {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+nav {
+  flex: 0 0 30%;
+}
+nav ul {
+  text-align: right;
+  margin: 0 auto;
+  margin-left: 31%;
+}
+nav ul li {
+  display: inline-block;
+  padding-left: 40px;
+}
+nav ul li a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+  position: relative;
+}
+
+nav ul li a::before {
+  background: #fff;
+}
+
+nav ul li a::before {
+  content: "";
+  width: 0;
+  height: 1px;
+  background: #ffffff;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  position: absolute;
+  transition: width 0.2s linear;
+}
+
+nav ul li a:hover:before {
+  width: 100%;
+}
+
+.navmenu_btn .menu_btn {
+  border-color: #fff;
+  padding: 14px 33px;
+  background: #fbfaff;
+  min-width: 120px;
+  text-align: center;
+  color: #7479fd;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 47px;
+}
+.navmenu_btn .menu_btn:hover {
+  background-color: #7479fd;
+  color: #fbfaff;
+}
+
+.navmenu_btn .menu_btn {
+  margin-left: 40px;
+}
+/*********************************/
+/******* 1.End Navbar CSS area *****/
+/*********************************/
+
+/******* 2.Start Bennar  CSS area *****/
+/*********************************/
+
+.payment_banner_area_two {
+  background-image: linear-gradient(
+    125deg,
+    #5f51fb 0%,
+    #767cfd 64%,
+    #8ca7ff 100%
+  );
+  height: 100vh;
+  min-height: 860px;
+  padding-top: 200px;
+  position: relative;
+  z-index: 1;
+  /* margin-top: -12%; */
+  position: absolute;
+  width: 100%;
+  top: -10%;
+}
+
+.payment_content_two {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 11%;
+}
+
+.payment_content_two h2 {
+  font-size: 50px;
+  line-height: 66px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 33px;
+}
+
+.action_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider_btn {
+  padding: 12px 50px;
+  background-color: white;
+  border-radius: 33px;
+  color: #786cfc;
+  display: inline-block;
+}
+.slider_btn .plus {
+  margin-right: 13px;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.video_btn {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  margin-left: 30px;
+  position: relative;
+}
+
+.payment_content_two .video_btn:before {
+  content: "";
+  width: 100%;
+  height: 1.5px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+/* .symbols-pulse {
+ area  */
+
+.symbols-pulse {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.payment_banner_area_two .symbols-pulse > div {
+  background-image: linear-gradient(
+    -180deg,
+    rgba(255, 255, 255, 0.04) 0%,
+    rgba(255, 255, 255, 0.04) 65%,
+    rgba(255, 255, 255, 0.04) 100%
+  );
+  width: 28rem;
+  height: 28rem;
+}
+
+.symbols-pulse .pulse-1 {
+  transform: translate(-50%, -50%) scale(0.67);
+}
+
+.symbols-pulse > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 23rem;
+  height: 23rem;
+  border-radius: 100%;
+  background-image: linear-gradient(
+    -180deg,
+    rgba(227, 221, 246, 0.1) 0%,
+    rgba(227, 221, 246, 0.2) 65%,
+    rgba(227, 221, 246, 0.1) 100%
+  );
+  z-index: -1;
+}
+
+.symbols-pulse .pulse-2 {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.symbols-pulse .pulse-3 {
+  transform: translate(-50%, -50%) scale(1.63);
+}
+.symbols-pulse .pulse-4 {
+  transform: translate(-50%, -50%) scale(2.1);
+}
+.symbols-pulse .pulse-x {
+  will-change: transform;
+  animation: pulsate 3s infinite;
+}
+
+.payment_img {
+  padding-top: 15.3%;
+}
+
+.payment_content_two .payment_img {
+  /* margin-top: 60px; */
+  position: relative;
+  z-index: 1;
+}
+
+.payment_content_two .payment_img .payment_icon.icon_one {
+  top: 36px;
+  left: -28px;
+}
+
+.payment_content_two .payment_img .payment_icon {
+  position: absolute;
+  z-index: 0;
+}
+
+.payment_content_two .payment_img .payment_icon.icon_two {
+  left: 20px;
+  top: 47%;
+}
+
+.payment_content_two .payment_img .payment_icon {
+  position: absolute;
+  z-index: 0;
+}
+
+.payment_content_two .payment_img .payment_icon.icon_three {
+  top: 53%;
+  left: -20px;
+  z-index: 1;
+}
+
+.payment_content_two .payment_img .payment_icon {
+  position: absolute;
+  z-index: 0;
+}
+
+.payment_content_two .payment_img .payment_icon.icon_four {
+  right: 0;
+  top: 10px;
+}
+
+.payment_content_two .payment_img .payment_icon {
+  position: absolute;
+  z-index: 0;
+}
+
+.payment_content_two .payment_img .payment_icon.icon_six {
+  right: -20px;
+  top: 282px;
+}
+
+.payment_content_two .payment_img .payment_icon {
+  position: absolute;
+  z-index: 0;
+}
+
+.payment_content_two .payment_img .payment_icon.icon_five {
+  right: -40px;
+  top: 176px;
+}
+
+.payment_content_two .payment_img .payment_icon {
+  position: absolute;
+  z-index: 0;
+}
+
+/******* 2.End Bennar  CSS area *****/
+/*********************************/
+
+/*********************************/
 /******* 3.Start Except area *****/
 /*********************************/
 
 .all_except_area {
   background-color: white;
+  margin-top: 59%;
 }
 
 .sec_title .sect_h2_title {
