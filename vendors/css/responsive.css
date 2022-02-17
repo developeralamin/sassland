@@ -90,6 +90,17 @@
 
   /*Header*/
 
+  .header_top {
+    /* padding: 0 0 10px; */
+    top: 0%;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    /* background: linear-gradient(#180e65, #271563, #431b62, #311b64); */
+    z-index: 99;
+    /* padding: 20px 20px; */
+    animation: slownav 1s forwards;
+  }
   nav ul li {
     display: block;
   }
@@ -103,6 +114,7 @@
     padding: 0;
     z-index: 1;
     display: none;
+    animation: slownav 1s forwards;
   }
   nav ul {
     text-align: center;
@@ -164,6 +176,10 @@
   }
   .payment_subscribe_info .subscribe-form .btn_four {
     margin-top: 4%;
+    margin-left: 0px;
+  }
+  .btn_four {
+    padding: 20px 47px;
   }
 }
 
