@@ -2,7 +2,7 @@
 /* Template URL:http://sasland.com/ */
 /* Author: alamin */
 /* Author URL:http://alamin.me  */
-/* Template Description:This is a bedsensor Template */
+/* Template Description:This is a sassland Template */
 
 /*--------------------------------------------------
 ------------------------------------------------------*/
@@ -11,12 +11,12 @@
 
     1.Header area 
     2.Banner area 
-    3.Fun-Fact area
-    4.Portfolio area 
-    5.Creative service
-    6.Our client
-    7.Our team
-    8.Join Us and Free Suscribe
+    3.Except  area
+    4.Client Help Us area 
+    5.Everything measures
+    6.Join thousands
+    7.Right price section
+    8.Suscriber area
     9.Footer 
  /*-------------------------------------------
 ------------------------------------------------*/
@@ -147,6 +147,20 @@ nav ul li a::before {
 nav ul li a:hover:before {
   width: 100%;
 }
+nav ul li.active a::before {
+  content: "";
+  width: 0;
+  height: 1px;
+  background: #ffffff;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  position: absolute;
+  transition: width 0.2s linear;
+}
+nav ul li.active a::before {
+  width: 100%;
+}
 
 .navmenu_btn .menu_btn {
   border-color: #fff;
@@ -169,6 +183,9 @@ nav ul li a:hover:before {
 .navmenu_btn .menu_btn {
   margin-left: 104px;
 }
+
+/* sticky navbar area  */
+/* sticky navbar area  */
 
 .sticky_nav {
   top: 0;
@@ -204,6 +221,23 @@ nav ul li a:hover:before {
 .sticky_nav nav ul li a:hover:before {
   width: 100%;
 }
+
+.sticky_nav nav ul li.active a::before {
+  content: "";
+  width: 0;
+  height: 1px;
+  background: #110f0f;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  position: absolute;
+  transition: width 0.2s linear;
+}
+
+.sticky_nav nav ul li.active a::before {
+  width: 100%;
+}
+
 .sticky_nav .navmenu_btn .menu_btn {
   color: #7479fd;
   background-color: #fff;
@@ -483,7 +517,7 @@ nav ul li a:hover:before {
 /*********************************/
 
 /*********************************/
-/******* 3.Start Except area *****/
+/******* 3.Start Except Css area *****/
 /*********************************/
 
 .all_except_area {
@@ -608,8 +642,6 @@ a.learn_btn_two::before {
 
 /* payment img feature area */
 
-.payment_feature_area_img {
-}
 .payment_feature_area_img img {
   max-width: 100%;
   vertical-align: middle;
@@ -619,7 +651,11 @@ a.learn_btn_two::before {
 }
 
 /*********************************/
-/******* 4.Start Payment Feature 2 area *****/
+/******* 4.End Payment Feature area *****/
+/*********************************/
+
+/*********************************/
+/******* 5.Start Payment Feature 2 area *****/
 /*********************************/
 
 .all_payment_feature_section_three {
@@ -697,7 +733,70 @@ a.learn_btn_two::before {
 }
 
 /*********************************/
-/******* 4.Start thousand bussiness area *****/
+/******* 5.End Payment Feature 2 area *****/
+/*********************************/
+
+/*********************************/
+/******* 6.Start Client Feedback area *****/
+/*********************************/
+.all_client_feedback_section_area {
+  background-image: linear-gradient(30deg, #5f51fb 0%, #8ca7ff 100%);
+  height: 550px;
+  position: relative;
+  /* z-index: 1; */
+}
+.top_feeback_are {
+  padding-left: 12%;
+}
+.top_feeback_are h2 {
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #fff;
+}
+.top_feeback_are p {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #cfd0fa;
+  font-style: italic;
+}
+
+.feedbac_button {
+  display: flex;
+  gap: 1px;
+  align-items: center;
+  position: absolute;
+  top: 33%;
+  left: 71%;
+  cursor: pointer;
+}
+
+.first_feddback_btn a .btn_owl {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #fff;
+  display: inline-block;
+  color: #fff;
+  line-height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  margin-left: 10px;
+  transition: all 0.3s linear;
+}
+
+.first_feddback_btn a .btn_owl:hover {
+  background-color: white;
+  color: #8c82fc;
+}
+
+/*********************************/
+/******* 6.End Client Feedback area *****/
+/*********************************/
+
+/*********************************/
+/******* 7.Start thousand bussiness area *****/
 /*********************************/
 .thousand_independent_bussiness {
   background-color: #fbfbfd;
@@ -725,13 +824,17 @@ a.learn_btn_two::before {
 }
 
 /*********************************/
-/******* 5.Start Price Section area *****/
+/******* 7.End thousand bussiness area *****/
+/*********************************/
+
+/*********************************/
+/*******8.Start Price Section area *****/
 /*********************************/
 
 .right_price_section_here {
   /* padding: 120px 0; */
   position: relative;
-  padding: 120px 0px 90px;
+  padding: 120px 0px 130px;
   z-index: 1;
 }
 .price_top_head {
@@ -799,18 +902,11 @@ a.learn_btn_two::before {
   z-index: -1;
   border-radius: 4px;
   transition: opacity 0.4s linear;
+  /* transform: translateY(30px); */
 }
 
-.payment_price_info .center {
-  border: 0px;
-  border-radius: 4px;
-  /* padding: 80px 40px 86px; */
-  /* transform: translateY(-30px); */
-  transition: all 0.4s linear;
-  /* height: 100%; */
-}
-/* .payment_price_item .center {
-  border: 0px;
+/* .payment_price_item.center {
+  border: 0;
   border-radius: 4px;
   padding: 80px 40px 86px;
   transform: translateY(-30px);
@@ -887,7 +983,11 @@ a.learn_btn_two::before {
 }
 
 /*********************************/
-/******* 5.Start Payment Footer area *****/
+/*******8.End Price Section area *****/
+/*********************************/
+
+/*********************************/
+/******* 9.Start Payment Footer area *****/
 /*********************************/
 
 .payment_subscribe_info {
@@ -988,7 +1088,11 @@ input[type="text"] {
 }
 
 /*********************************/
-/******* 6.Start  Footer area *****/
+/******* 9.End Payment Footer area *****/
+/*********************************/
+
+/*********************************/
+/******* 10.Start  Footer area *****/
 /*********************************/
 .payment_footer_area {
   background: #07112d;
@@ -1100,3 +1204,7 @@ input[type="text"] {
   background-color: rgb(95, 81, 251);
   color: #fff;
 }
+
+/*********************************/
+/******* 10.End  Footer area *****/
+/*********************************/

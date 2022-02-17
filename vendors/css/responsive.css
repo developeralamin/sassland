@@ -1,5 +1,5 @@
-/* screen size 1270px */
-/* screen size 1270px */
+/* screen size 1425px */
+/* screen size 1425px */
 @media all and (max-width: 1425px) {
   /*excepect area*/
   .all_except_area {
@@ -35,7 +35,7 @@
   }
 }
 @media all and (max-width: 670px) {
-  /*excepect area*/
+  /*payment_banner_area_two*/
   .payment_banner_area_two {
     min-height: 717px;
   }
@@ -45,28 +45,24 @@
 }
 
 @media all and (max-width: 498px) {
-  /*excepect area*/
   .payment_banner_area_two {
     min-height: 639px;
   }
 }
 
 @media all and (max-width: 498px) {
-  /*excepect area*/
   .all_except_area {
     margin-top: 180%;
   }
 }
 
 @media all and (max-width: 390px) {
-  /*excepect area*/
   .all_except_area {
     margin-top: 200%;
   }
 }
 
 @media all and (max-width: 1270px) {
-  /*excepect area*/
   .container {
     max-width: 1000px;
     width: 96%;
@@ -122,8 +118,8 @@
   }
 }
 
-/* screen size 926 */
-/* screen size 926 */
+/* screen size 960px */
+/* screen size 960px */
 
 @media all and (min-width: 960px) {
   nav {
@@ -131,6 +127,8 @@
   }
 }
 
+/* screen size 1199px */
+/* screen size 1199px */
 @media (max-width: 1199px) {
   .payment_featuere_three_img img {
     max-width: 100%;
@@ -138,8 +136,8 @@
   }
 }
 
-/* screen size 1060px */
-/* screen size 1060px */
+/* screen size 1080px */
+/* screen size 1080px */
 @media all and (max-width: 1080px) {
   .single_footer_area {
     flex: 0 0 50%;
@@ -158,8 +156,8 @@
   }
 }
 
-/* screen size 1060px */
-/* screen size 1060px */
+/* screen size 786px */
+/* screen size 786px */
 @media all and (max-width: 786px) {
   .payment_subscribe_info .subscribe-form {
     display: block;
@@ -177,8 +175,8 @@
   }
 }
 
-/* screen size 1060px */
-/* screen size 1060px */
+/* screen size 736px */
+/* screen size 736px */
 @media all and (max-width: 736px) {
   .single_footer_area {
     flex: 0 0 90%;
@@ -267,6 +265,8 @@
   }
 }
 
+/* screen size 646px */
+/* screen size 646px */
 @media all and (max-width: 646px) {
   /*excepect area*/
   .sinlge_item_section_payment_feature {
@@ -274,6 +274,8 @@
   }
 }
 
+/* screen size 620px */
+/* screen size 620px */
 @media all and (max-width: 620px) {
   /*excepect area*/
   .payment_banner_area_two .symbols-pulse > div {
@@ -294,6 +296,9 @@
     gap: 23px;
   }
 }
+
+/* screen size 558px */
+/* screen size 558px */
 
 @media all and (max-width: 558px) {
   /*excepect area*/
@@ -329,6 +334,8 @@
   }
 }
 
+/* screen size 360px */
+/* screen size 360px */
 @media all and (max-width: 360px) {
   /*excepect area*/
   .payment_img img {
@@ -338,12 +345,19 @@
     margin-top: 226%;
   }
 }
+
+/* screen size 316px */
+/* screen size 316px */
+
 @media all and (max-width: 316px) {
   /*excepect area*/
   .all_except_area {
     margin-top: 246%;
   }
 }
+
+/* screen size 302px */
+/* screen size 302px */
 
 @media all and (max-width: 302px) {
   /*excepect area*/
