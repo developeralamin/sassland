@@ -207,6 +207,16 @@
   .single_payment_three_section {
     flex: 0 0 80%;
     align-items: center;
+    margin: 5%;
+  }
+
+  .payment_price_info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .payment_price_item {
+    width: calc(61.111%);
+    margin: 2%;
   }
 }
 

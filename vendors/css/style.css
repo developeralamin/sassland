@@ -729,7 +729,10 @@ a.learn_btn_two::before {
 /*********************************/
 
 .right_price_section_here {
-  padding: 120px 0;
+  /* padding: 120px 0; */
+  position: relative;
+  padding: 120px 0px 90px;
+  z-index: 1;
 }
 .price_top_head {
   text-align: center;
@@ -739,6 +742,148 @@ a.learn_btn_two::before {
   line-height: 44px;
   font-weight: 500;
   color: #051441;
+}
+
+.payment_price_info {
+  margin-top: 50px;
+}
+
+.right_price_section_here .payment_price_info {
+  padding: 30px 0;
+}
+
+.right_price_section_here::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(../img/price_bg.png) no-repeat scroll center;
+  position: absolute;
+  z-index: -1;
+}
+
+.right_price_section_here .payment_price_info {
+  display: flex;
+  padding: 20px 0px;
+}
+
+.payment_price_item {
+  text-align: center;
+  background: #fbfbfd;
+  padding: 50px 40px 55px;
+  border: 1px solid #f1f3f8;
+  border-radius: 4px;
+  position: relative;
+  z-index: 1;
+  width: calc(100% / 3);
+  float: left;
+  transition: all 0.2s linear;
+}
+
+.payment_price_item:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    -140deg,
+    #fdabe7 0%,
+    #bd8ef2 36%,
+    #7d71fd 100%
+  );
+  box-shadow: 0px 30px 60px 0px rgba(0, 11, 40, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  border-radius: 4px;
+  transition: opacity 0.4s linear;
+}
+
+.payment_price_info .center {
+  border: 0px;
+  border-radius: 4px;
+  /* padding: 80px 40px 86px; */
+  /* transform: translateY(-30px); */
+  transition: all 0.4s linear;
+  /* height: 100%; */
+}
+/* .payment_price_item .center {
+  border: 0px;
+  border-radius: 4px;
+  padding: 80px 40px 86px;
+  transform: translateY(-30px);
+  transition: all 0.4s linear;
+} */
+
+.payment_price_item.center:before {
+  opacity: 1;
+}
+.payment_price_item:hover::before {
+  opacity: 1;
+}
+
+.payment_price_item.center h2,
+.payment_price_item.center h6,
+.payment_price_item.center p {
+  color: white;
+}
+
+.payment_price_item h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  color: #051441;
+}
+.payment_price_item h6 {
+  color: #051441;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.payment_price_item p {
+  color: #7f7294;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+  padding-top: 12px;
+  padding-bottom: 30px;
+}
+
+.payment_price_item .payment_price_btn {
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 45px;
+  background: rgba(253, 83, 135, 0.1);
+  display: inline-block;
+  padding: 10px 42px;
+  color: #fd5387;
+  transition: all 0.3s linear;
+}
+
+.center .payment_price_btn {
+  color: white;
+}
+
+.payment_price_item .payment_price_btn i {
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+.payment_price_item:nth-child(3) .payment_price_btn {
+  background: rgba(95, 81, 251, 0.1);
+  color: #5f51fb;
+}
+.payment_price_item:hover .payment_price_btn {
+  background: rgba(255, 255, 255, 0.1);
+  /* color: #fff; */
+}
+
+.payment_price_item:hover h2,
+.payment_price_item:hover h6,
+.payment_price_item:hover p {
+  color: #fff;
 }
 
 /*********************************/
