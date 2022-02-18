@@ -45,7 +45,7 @@ $('.mobile_menu .close_nav').click(function(){
 				items:3
 			},
 			990:{
-				items:3
+				items:2
 			}
 
 		    }
